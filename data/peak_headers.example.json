@@ -1,5 +1,5 @@
 {
-  "_comment": "巅峰榜(getpeakranklist)走的是签名认证，无法像另外两个接口那样只填几个字段。这里需要把一次真实抓包里 POST /game/getpeakranklist 请求的全部请求头原样贴进来（除了 Host/Content-Length 这类由 requests 库自动处理的头），尤其是 sig / msdkEncodeParam / msdkToken / timestamp / encode / algorithm 这几个，任何一个改动都可能导致签名失效。",
+  "_comment": "巅峰榜(getpeakranklist)走的是签名认证，无法像另外两个接口那样只填几个字段。这里需要把一次真实抓包里 POST /game/getpeakranklist 请求的全部请求头原样贴进来（除了 Host/Content-Length 这类由 requests 库自动处理的头）。已实测确认 sig/msdkEncodeParam/msdkToken/timestamp 这些字段只跟抓包那一刻的会话绑定，跟请求体里的 branchType/areaType/rankDateType/page/pageSize 无关，抓一次可以直接把 collectors/peak_rank.py 的全部组合跑完，不用每次都重新抓包；只是没验证过这份 sig 的有效期多长，隔太久失效了重新抓一次就行。",
   "userId": "<抓包复制>",
   "openid": "<抓包复制>",
   "algorithm": "v2",
@@ -12,7 +12,7 @@
   "source": "smoba_zhushou",
   "msdkToken": "<抓包复制>",
   "noencrypt": "1",
-  "timestamp": "<抓包复制，毫秒时间戳，注意这个基本是一次性的>",
+  "timestamp": "<抓包复制，毫秒时间戳>",
   "cClientVersionName": "9.104.1029",
   "gameId": "20001",
   "cSystem": "android",

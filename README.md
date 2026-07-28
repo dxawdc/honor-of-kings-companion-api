@@ -63,11 +63,12 @@ python -m collectors.honor_rank --config config.json --hero-ids 118 --adcodes 51
 
 ### 巅峰榜
 
-巅峰榜的认证机制和另外两个不一样（见下文「关于巅峰榜的限制」），需要单独一份请求头文件：
+巅峰榜的认证机制和另外两个不一样（见下文「关于巅峰榜的认证」），需要单独一份请求头文件，
+但只要抓一次包就能拿这份 header 把全部组合（7 分路 x 4 区服 x 今日/昨日 = 56 次请求）跑完：
 
 ```bash
 cp data/peak_headers.example.json peak_headers.json  # 填入抓包得到的真实请求头
-python -m collectors.peak_rank --headers peak_headers.json --role-id <你的roleId> --page-start 1 --page-end 3 --out out/peak.csv
+python -m collectors.peak_rank --headers peak_headers.json --role-id <你的roleId> --out out/peak_all.csv
 ```
 
 三个脚本的参数、字段含义、榜单维度取值范围，详见 [`docs/api_reference.md`](docs/api_reference.md)。
@@ -98,22 +99,22 @@ python -m collectors.peak_rank --headers peak_headers.json --role-id <你的role
    - 英雄热度榜 / 荣耀榜：抄进 `config.json`，字段列表见 `config.example.json`。这些字段在同一次
      登录会话里基本不变，抓一次就能用较长一段时间（token 过期需要重新抓）。
    - 巅峰榜：抄进 `peak_headers.json`，字段列表见 `data/peak_headers.example.json`。这份请求头里带
-     签名字段 `sig`，有效期未知，谨慎复用。
+     签名字段 `sig`，抓一次可以跑完全部筛选组合（见下文「关于巅峰榜的认证」），但有效期未知，
+     隔太久失效需要重新抓。
 
 如果你更熟悉用 mitmweb（`mitmproxy` 自带的网页版界面）而不是命令行，直接用它过滤 `kohcamp.qq.com`
 找请求也是一样的。
 
-## 关于巅峰榜的限制
+## 关于巅峰榜的认证
 
-巅峰榜（`getpeakranklist`）走的是嵌在 App 里的 H5 页面签名认证，请求头里的 `sig` 大概率是
-"时间戳 + 参数 + 客户端内置密钥"算出来的，算法没有逆向。这意味着：
+巅峰榜（`getpeakranklist`）走的是嵌在 App 里的 H5 页面签名认证，请求头里带 `sig` 等签名字段，
+具体算法没有逆向。但实测确认了一个关键结论：**这个签名只跟"打开页面那一刻的会话"绑定，跟请求体里
+`branchType`/`areaType`/`rankDateType`/`page`/`pageSize` 完全无关**——同一份抓包头改任意参数组合都能用，
+甚至脱离手机直接从别的电脑发请求也成功。所以只需要抓一次包，就能用 `collectors/peak_rank.py` 把全部
+`7 分路 x 4 区服 x 2(今日/昨日) = 56` 种组合跑完，不用每换一个筛选项就重新抓包。
 
-- 不能像另外两个榜单一样，靠一份配置自由拼参数组合去自动生成一堆合法请求；
-- 只能原样复用一次抓包拿到的请求头，跑脚本自带的字段变化（翻页等），如果服务端认为改动的字段
-  在签名范围内，会直接报错，此时需要回去重新抓包。
-
-如果你需要更完整的巅峰榜数据（比如更多 `branchType`/`areaType` 取值、更深的分页），目前唯一可靠的
-路子是在 App 里手动多操作几次、多抓几份请求头，而不是指望程序化穷举。
+唯一没摸清的是这份 `sig`/`timestamp` 的有效期有多长（已知至少十几分钟内持续有效）。如果隔了很久后
+脚本报"认证失败"，回 App 里重新打开一次巅峰榜页面、重新抓一份请求头即可。
 
 ## 关于全量采集
 
@@ -122,13 +123,13 @@ python -m collectors.peak_rank --headers peak_headers.json --role-id <你的role
 | 榜单 | 维度组合数 | 数据量级 |
 |---|---|---|
 | 英雄热度榜 | 4 段位 x 6 分路 = 24 | 约 2MB，几秒抓完 |
+| 巅峰榜 | 7 分路 x 4 区服 x 2(今日/昨日) = 56，每组合封顶 500 条 | 约 2.8 万条，几分钟抓完 |
 | 荣耀榜 | 131 英雄 x 3246 地区(省+市+区县) ≈ 42.5 万 | 约 10~15GB |
-| 巅峰榜 | 未知（分页深度/筛选取值范围未摸清） | 未知 |
 
-荣耀榜如果真的按"全部英雄 x 全部地区"跑一遍，请求量比另外两个大出好几个数量级，用的又是你自己
-账号的会话，高频调用很容易触发风控或者把 token 打挂。`collectors/honor_rank.py` 默认设置了组合数
-阈值（超过 5000 组合必须加 `--confirm-full` 才会真正执行），并且默认限流（每次请求间隔 0.6s），
-建议按需用 `--hero-ids`/`--region-level`/`--adcodes` 缩小范围，而不是无脑全量拉取。
+只有荣耀榜是真正的大体量，如果按"全部英雄 x 全部地区"跑一遍，请求量比另外两个大出好几个数量级，
+用的又是你自己账号的会话，高频调用很容易触发风控或者把 token 打挂。`collectors/honor_rank.py` 默认
+设置了组合数阈值（超过 5000 组合必须加 `--confirm-full` 才会真正执行），并且默认限流（每次请求间隔
+0.6s），建议按需用 `--hero-ids`/`--region-level`/`--adcodes` 缩小范围，而不是无脑全量拉取。
 
 ## License
 
