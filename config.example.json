@@ -1,0 +1,22 @@
+{
+  "cChannelId": "10035072",
+  "cClientVersionCode": "2047943308",
+  "cClientVersionName": "9.104.1029",
+  "cCurrentGameId": "20001",
+  "cGameId": "20001",
+  "cSystemVersionCode": "32",
+  "cSystemVersionName": "12",
+  "cpuHardware": "HUAWEI",
+  "encodeParam": "<从抓包里复制 encodeParam 请求头的值>",
+  "gameAreaId": "3",
+  "gameId": "20001",
+  "gameOpenId": "<从抓包里复制 gameOpenId 请求头的值>",
+  "gameRoleId": "<从抓包里复制 gameRoleId 请求头的值，也是你的游戏角色ID>",
+  "gameServerId": "<从抓包里复制 gameServerId 请求头的值>",
+  "gameUserSex": "1",
+  "openId": "<从抓包里复制 openId 请求头的值>",
+  "tinkerId": "<从抓包里复制 tinkerId 请求头的值>",
+  "token": "<从抓包里复制 token 请求头的值>",
+  "userId": "<从抓包里复制 userId 请求头的值>",
+  "x-log-uid": "<任意大写UUID，不影响结果，抓包里有现成的可以直接抄>"
+}

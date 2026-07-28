@@ -1,0 +1,919 @@
+[
+  {
+    "heroId": 105,
+    "heroName": "廉颇",
+    "heroNickName": "正义爆轰",
+    "heroType": "坦克",
+    "heroBranchRoad": "对抗路/游走"
+  },
+  {
+    "heroId": 106,
+    "heroName": "小乔",
+    "heroNickName": "恋之微风",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 107,
+    "heroName": "赵云",
+    "heroNickName": "苍天翔龙",
+    "heroType": "战士/刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 108,
+    "heroName": "墨子",
+    "heroNickName": "和平守望",
+    "heroType": "法师/战士",
+    "heroBranchRoad": "中路/游走"
+  },
+  {
+    "heroId": 109,
+    "heroName": "妲己",
+    "heroNickName": "魅力之狐",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 110,
+    "heroName": "嬴政",
+    "heroNickName": "王者独尊",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 111,
+    "heroName": "孙尚香",
+    "heroNickName": "千金重弩",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 112,
+    "heroName": "鲁班七号",
+    "heroNickName": "机关造物",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 113,
+    "heroName": "庄周",
+    "heroNickName": "逍遥幻梦",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 114,
+    "heroName": "刘禅",
+    "heroNickName": "暴走机关",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 115,
+    "heroName": "高渐离",
+    "heroNickName": "叛逆吟游",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 116,
+    "heroName": "阿轲",
+    "heroNickName": "信念之刃",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 117,
+    "heroName": "钟无艳",
+    "heroNickName": "野蛮之锤",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 118,
+    "heroName": "孙膑",
+    "heroNickName": "逆流之时",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 119,
+    "heroName": "扁鹊",
+    "heroNickName": "善恶怪医",
+    "heroType": "法师/战士",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 120,
+    "heroName": "白起",
+    "heroNickName": "最终兵器",
+    "heroType": "坦克",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 121,
+    "heroName": "芈月",
+    "heroNickName": "永恒之月",
+    "heroType": "法师/战士",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 123,
+    "heroName": "吕布",
+    "heroNickName": "无双之魔",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 124,
+    "heroName": "周瑜",
+    "heroNickName": "铁血都督",
+    "heroType": "法师/战士",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 125,
+    "heroName": "元歌",
+    "heroNickName": "无间傀儡",
+    "heroType": "刺客",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 126,
+    "heroName": "夏侯惇",
+    "heroNickName": "不羁之风",
+    "heroType": "坦克/战士",
+    "heroBranchRoad": "对抗路/游走/打野"
+  },
+  {
+    "heroId": 127,
+    "heroName": "甄姬",
+    "heroNickName": "洛神降临",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 128,
+    "heroName": "曹操",
+    "heroNickName": "鲜血枭雄",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 129,
+    "heroName": "典韦",
+    "heroNickName": "狂战士",
+    "heroType": "战士",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 130,
+    "heroName": "宫本武藏",
+    "heroNickName": "剑圣",
+    "heroType": "战士/刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 131,
+    "heroName": "李白",
+    "heroNickName": "青莲剑仙",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 132,
+    "heroName": "马可波罗",
+    "heroNickName": "远游之枪",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 133,
+    "heroName": "狄仁杰",
+    "heroNickName": "断案大师",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 134,
+    "heroName": "达摩",
+    "heroNickName": "拳僧",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 135,
+    "heroName": "项羽",
+    "heroNickName": "霸王",
+    "heroType": "坦克/战士",
+    "heroBranchRoad": "对抗路/游走"
+  },
+  {
+    "heroId": 136,
+    "heroName": "武则天",
+    "heroNickName": "女帝",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 137,
+    "heroName": "司马懿",
+    "heroNickName": "寂灭之心",
+    "heroType": "刺客/法师",
+    "heroBranchRoad": "打野/中路"
+  },
+  {
+    "heroId": 139,
+    "heroName": "老夫子",
+    "heroNickName": "万古长明",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 140,
+    "heroName": "关羽",
+    "heroNickName": "一骑当千",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 141,
+    "heroName": "貂蝉",
+    "heroNickName": "绝世舞姬",
+    "heroType": "法师",
+    "heroBranchRoad": "中路/对抗路"
+  },
+  {
+    "heroId": 142,
+    "heroName": "安琪拉",
+    "heroNickName": "暗夜萝莉",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 144,
+    "heroName": "程咬金",
+    "heroNickName": "热烈之斧",
+    "heroType": "坦克",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 146,
+    "heroName": "露娜",
+    "heroNickName": "月光之女",
+    "heroType": "刺客/法师",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 148,
+    "heroName": "姜子牙",
+    "heroNickName": "封神者",
+    "heroType": "法师",
+    "heroBranchRoad": "中路/游走"
+  },
+  {
+    "heroId": 149,
+    "heroName": "刘邦",
+    "heroNickName": "双面君主",
+    "heroType": "坦克/法师",
+    "heroBranchRoad": "对抗路/游走"
+  },
+  {
+    "heroId": 150,
+    "heroName": "韩信",
+    "heroNickName": "国士无双",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 151,
+    "heroName": "孙权",
+    "heroNickName": "定旌之谋",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 152,
+    "heroName": "王昭君",
+    "heroNickName": "冰雪之华",
+    "heroType": "法师",
+    "heroBranchRoad": "中路/游走"
+  },
+  {
+    "heroId": 153,
+    "heroName": "兰陵王",
+    "heroNickName": "暗影刀锋",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 154,
+    "heroName": "花木兰",
+    "heroNickName": "传说之刃",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 155,
+    "heroName": "艾琳",
+    "heroNickName": "精灵之舞",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 156,
+    "heroName": "张良",
+    "heroNickName": "言灵之书",
+    "heroType": "法师",
+    "heroBranchRoad": "中路/游走"
+  },
+  {
+    "heroId": 157,
+    "heroName": "不知火舞",
+    "heroNickName": "明媚烈焰",
+    "heroType": "刺客/法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 159,
+    "heroName": "朵莉亚",
+    "heroNickName": "人鱼之歌",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 162,
+    "heroName": "娜可露露",
+    "heroNickName": "鹰之守护",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 163,
+    "heroName": "橘右京",
+    "heroNickName": "神梦一刀",
+    "heroType": "刺客/战士",
+    "heroBranchRoad": "打野/对抗路"
+  },
+  {
+    "heroId": 166,
+    "heroName": "亚瑟",
+    "heroNickName": "圣骑之力",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 167,
+    "heroName": "孙悟空",
+    "heroNickName": "齐天大圣",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 168,
+    "heroName": "牛魔",
+    "heroNickName": "精英酋长",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 169,
+    "heroName": "后羿",
+    "heroNickName": "半神之弓",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 170,
+    "heroName": "刘备",
+    "heroNickName": "仁德义枪",
+    "heroType": "战士",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 171,
+    "heroName": "张飞",
+    "heroNickName": "禁血狂兽",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 172,
+    "heroName": "蚩奼",
+    "heroNickName": "五兵之主",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 173,
+    "heroName": "李元芳",
+    "heroNickName": "王都密探",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路/打野"
+  },
+  {
+    "heroId": 174,
+    "heroName": "虞姬",
+    "heroNickName": "森之风灵",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 175,
+    "heroName": "钟馗",
+    "heroNickName": "虚灵城判",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 176,
+    "heroName": "杨玉环",
+    "heroNickName": "霓裳风华",
+    "heroType": "法师",
+    "heroBranchRoad": "中路/游走/打野"
+  },
+  {
+    "heroId": 177,
+    "heroName": "苍",
+    "heroNickName": "苍狼末裔",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路/打野"
+  },
+  {
+    "heroId": 178,
+    "heroName": "杨戬",
+    "heroNickName": "根源之目",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 179,
+    "heroName": "女娲",
+    "heroNickName": "至高创世",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 180,
+    "heroName": "哪吒",
+    "heroNickName": "桀骜炎枪",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 182,
+    "heroName": "干将莫邪",
+    "heroNickName": "淬命双剑",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 183,
+    "heroName": "雅典娜",
+    "heroNickName": "圣域余晖",
+    "heroType": "战士/刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 184,
+    "heroName": "蔡文姬",
+    "heroNickName": "天籁弦音",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 186,
+    "heroName": "太乙真人",
+    "heroNickName": "炼金大师",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 187,
+    "heroName": "东皇太一",
+    "heroNickName": "噬灭日蚀",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走/对抗路"
+  },
+  {
+    "heroId": 188,
+    "heroName": "大禹",
+    "heroNickName": "鼎镇山河",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 189,
+    "heroName": "鬼谷子",
+    "heroNickName": "万物有灵",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 190,
+    "heroName": "诸葛亮",
+    "heroNickName": "绝代智谋",
+    "heroType": "法师",
+    "heroBranchRoad": "中路/打野"
+  },
+  {
+    "heroId": 191,
+    "heroName": "大乔",
+    "heroNickName": "沧海之曜",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走/中路"
+  },
+  {
+    "heroId": 192,
+    "heroName": "黄忠",
+    "heroNickName": "燃魂重炮",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 193,
+    "heroName": "铠",
+    "heroNickName": "破灭刃锋",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "打野/对抗路"
+  },
+  {
+    "heroId": 194,
+    "heroName": "苏烈",
+    "heroNickName": "不屈铁壁",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走/对抗路"
+  },
+  {
+    "heroId": 195,
+    "heroName": "百里玄策",
+    "heroNickName": "嚣狂之镰",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 196,
+    "heroName": "百里守约",
+    "heroNickName": "静谧之眼",
+    "heroType": "射手/刺客",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 197,
+    "heroName": "弈星",
+    "heroNickName": "天元之弈",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 198,
+    "heroName": "梦奇",
+    "heroNickName": "入梦之灵",
+    "heroType": "坦克/法师",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 199,
+    "heroName": "公孙离",
+    "heroNickName": "幻舞玲珑",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 312,
+    "heroName": "沈梦溪",
+    "heroNickName": "爆弹怪猫",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 501,
+    "heroName": "明世隐",
+    "heroNickName": "灵魂劫卜",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 502,
+    "heroName": "裴擒虎",
+    "heroNickName": "六合虎拳",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 503,
+    "heroName": "狂铁",
+    "heroNickName": "战车意志",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 504,
+    "heroName": "米莱狄",
+    "heroNickName": "筑城者",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 505,
+    "heroName": "瑶",
+    "heroNickName": "鹿灵守心",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 506,
+    "heroName": "云中君",
+    "heroNickName": "流云之翼",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 507,
+    "heroName": "李信",
+    "heroNickName": "谋世之战",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 508,
+    "heroName": "伽罗",
+    "heroNickName": "破魔之箭",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 509,
+    "heroName": "盾山",
+    "heroNickName": "无尽之盾",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 510,
+    "heroName": "孙策",
+    "heroNickName": "光明之海",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 511,
+    "heroName": "猪八戒",
+    "heroNickName": "无忧猛士",
+    "heroType": "坦克",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 513,
+    "heroName": "上官婉儿",
+    "heroNickName": "惊鸿之笔",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 514,
+    "heroName": "亚连",
+    "heroNickName": "追忆之刃",
+    "heroType": "战士/坦克",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 515,
+    "heroName": "嫦娥",
+    "heroNickName": "寒月公主",
+    "heroType": "法师/战士",
+    "heroBranchRoad": "中路/对抗路/打野"
+  },
+  {
+    "heroId": 517,
+    "heroName": "大司命",
+    "heroNickName": "肃归之戈",
+    "heroType": "战士",
+    "heroBranchRoad": "打野/对抗路"
+  },
+  {
+    "heroId": 518,
+    "heroName": "马超",
+    "heroNickName": "冷晖之枪",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 519,
+    "heroName": "敖隐",
+    "heroNickName": "凌霄真龙",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 521,
+    "heroName": "海月",
+    "heroNickName": "永夜之心",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 522,
+    "heroName": "曜",
+    "heroNickName": "星辰之子",
+    "heroType": "战士/刺客",
+    "heroBranchRoad": "打野/对抗路"
+  },
+  {
+    "heroId": 523,
+    "heroName": "西施",
+    "heroNickName": "幻纱之灵",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 524,
+    "heroName": "蒙犽",
+    "heroNickName": "烈炮小子",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 525,
+    "heroName": "鲁班大师",
+    "heroNickName": "神匠",
+    "heroType": "辅助/坦克",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 527,
+    "heroName": "蒙恬",
+    "heroNickName": "秩序统将",
+    "heroType": "坦克",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 528,
+    "heroName": "澜",
+    "heroNickName": "鲨之猎刃",
+    "heroType": "刺客/战士",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 529,
+    "heroName": "盘古",
+    "heroNickName": "破晓之神",
+    "heroType": "战士",
+    "heroBranchRoad": "打野/对抗路"
+  },
+  {
+    "heroId": 531,
+    "heroName": "镜",
+    "heroNickName": "破镜之刃",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 533,
+    "heroName": "阿古朵",
+    "heroNickName": "山林之子",
+    "heroType": "射手",
+    "heroBranchRoad": "打野/发育路"
+  },
+  {
+    "heroId": 534,
+    "heroName": "桑启",
+    "heroNickName": "萤火之旅",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 536,
+    "heroName": "夏洛特",
+    "heroNickName": "玫瑰剑士",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 537,
+    "heroName": "司空震",
+    "heroNickName": "雷霆之王",
+    "heroType": "战士/法师",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 538,
+    "heroName": "云缨",
+    "heroNickName": "燎原之心",
+    "heroType": "战士/刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 540,
+    "heroName": "金蝉",
+    "heroNickName": "渡世行者",
+    "heroType": "法师",
+    "heroBranchRoad": "中路/游走"
+  },
+  {
+    "heroId": 542,
+    "heroName": "暃",
+    "heroNickName": "玉城之子",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 544,
+    "heroName": "赵怀真",
+    "heroNickName": "自在之心",
+    "heroType": "战士",
+    "heroBranchRoad": "打野/对抗路/游走"
+  },
+  {
+    "heroId": 545,
+    "heroName": "莱西奥",
+    "heroNickName": "火鹰船长",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 548,
+    "heroName": "戈娅",
+    "heroNickName": "沙海飞舟",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 549,
+    "heroName": "心魔六耳",
+    "heroNickName": "孙悟空命格",
+    "heroType": "刺客/战士",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 550,
+    "heroName": "空空儿",
+    "heroNickName": "笑面诡手",
+    "heroType": "辅助/战士",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 558,
+    "heroName": "影",
+    "heroNickName": "黯羽东君",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 563,
+    "heroName": "海诺",
+    "heroNickName": "命运之引",
+    "heroType": "法师/战士",
+    "heroBranchRoad": "中路/对抗路"
+  },
+  {
+    "heroId": 564,
+    "heroName": "姬小满",
+    "heroNickName": "武道奇才",
+    "heroType": "战士",
+    "heroBranchRoad": "对抗路"
+  },
+  {
+    "heroId": 577,
+    "heroName": "少司缘",
+    "heroNickName": "聆愿之祝",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  },
+  {
+    "heroId": 581,
+    "heroName": "元流之子(坦克)",
+    "heroNickName": "止戈之道",
+    "heroType": "坦克/战士",
+    "heroBranchRoad": "对抗路/打野"
+  },
+  {
+    "heroId": 582,
+    "heroName": "元流之子(法师)",
+    "heroNickName": "万妙之心",
+    "heroType": "法师",
+    "heroBranchRoad": "中路"
+  },
+  {
+    "heroId": 583,
+    "heroName": "元流之子(刺客)",
+    "heroNickName": "破局之识",
+    "heroType": "刺客",
+    "heroBranchRoad": "打野"
+  },
+  {
+    "heroId": 584,
+    "heroName": "元流之子(射手)",
+    "heroNickName": "沉舟之志",
+    "heroType": "射手",
+    "heroBranchRoad": "发育路"
+  },
+  {
+    "heroId": 585,
+    "heroName": "元流之子(辅助)",
+    "heroNickName": "守望之诺",
+    "heroType": "辅助/法师",
+    "heroBranchRoad": "游走"
+  }
+]
